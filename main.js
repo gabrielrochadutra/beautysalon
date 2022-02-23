@@ -1,5 +1,5 @@
 
-/* ABRE E FECHA O MENU HAMBURGUER NO CLIQUE*/
+/* ABRE E FECHA O MENU HAMBURGUER NO CLIQUE */
 
 const nav = document.querySelector('#header nav')
 const toggle = document.querySelectorAll('nav .toggle')
@@ -10,7 +10,7 @@ for(const element of toggle) {
   })
 }
 
-/* FECHA MENU AO CLICAR EM UM ITEM*/
+/* FECHA MENU AO CLICAR EM UM ITEM */
 
 const links = document.querySelectorAll('nav ul li a')
 
@@ -19,3 +19,16 @@ for(const link of links) {
     nav.classList.remove('show')
   })
 }
+
+/* APLICA SOMBRA NO HEADER AO DAR SCROLL */
+
+const header = document.querySelector('#header')
+const navHeight = header.offsetHeight
+
+window.addEventListener('scroll', function(){
+  if(window.scrollY >= navHeight) {
+    header.classList.add('scroll')
+  } else {
+    header.classList.remove('scroll')
+  }
+})
