@@ -41,6 +41,7 @@ body {
 
 .title {
   font: 700 1.875rem "Poppins", sans-serif;
+  line-height: 2.625rem;
   color: var(--dark);
   -webkit-font-smoothing: auto;
 }
@@ -341,4 +342,112 @@ cards.grid {
 .card .title {
   font-size: 1.5rem;
   margin-bottom: 0.75rem;
+}
+
+/* TESTIMONIALS */
+
+#testimonials {
+  background-color: var(--background);
+}
+
+#testimonials .container {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+#testimonials header {
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
+  margin-bottom: 0;
+}
+
+#testimonials blockquote {
+  padding: 2rem;
+  box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.08);
+  border-radius: 0.25rem;
+}
+
+#testimonials blockquote p {
+  position: relative;
+  text-indent: 2rem;
+  margin-bottom: 1.5rem;
+  color: var(--dark);
+}
+
+#testimonials blockquote p span {
+  font: 700 3rem serif;
+  position: absolute;
+  top: -0.5rem;
+  left: -2rem;
+  color: var(--primary);
+}
+
+#testimonials cite {
+  display: flex;
+  align-items: center;
+  color: var(--text);
+}
+
+#testimonials cite img {
+  width: 2rem;
+  height: 2rem;
+  object-fit: cover;
+  clip-path: circle();
+  margin-right: 0.5rem;
+}
+
+/* SWIPER */
+
+.swiper-container {
+  max-width: 100%;
+}
+
+.swiper-slide {
+  height: auto;
+  padding: 4rem 2rem 1rem;
+  
+}
+
+.swiper-pagination {
+  position: unset;
+  bottom: 0px;
+}
+
+.swiper-pagination-bullet {
+  width: 0.75rem;
+  height: 0.75rem;
+}
+
+.swiper-pagination-bullet-active {
+  background: var(--primary);
+}
+
+/* CONTACT */
+
+#contact .grid {
+  gap: 4rem;
+}
+
+#contact .text p {
+  margin-bottom: 2rem;
+}
+
+#contact .button i {
+  font-size: 1.5rem;
+  margin-right: 0.625rem;
+}
+
+#contact ul.grid {
+  gap: 2rem;
+}
+
+#contact ul li {
+  display: flex;
+  align-items: center;
+}
+
+#contact ul li i {
+  color: var(--primary);
+  font-size: 1.5rem;
+  margin-right: 0.625rem;
 }
