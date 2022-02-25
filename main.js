@@ -41,7 +41,13 @@ const swiper = new Swiper('.swiper-container', {
     el: '.swiper-pagination'
   },
   mousewheel: true,
-  keyboard: true
+  keyboard: true,
+  breakpoints: {
+    767: {
+      slidesPerView: 2,
+      setWrapperSize: true
+    }
+  }
 });
 
 /* SCROLL REVEAL */
@@ -61,15 +67,15 @@ scrollReveal.reveal(
   #contact .text, #contact .links,
   footer .brand, footer .social
   `, 
-  { interval: 100 })
+{ interval: 100 })
 
-  /* BACK TO TOP */
+/* BACK TO TOP */
 
-  const backToTopButton = document.querySelector('.back-to-top')
+const backToTopButton = document.querySelector('.back-to-top')
   window.addEventListener('scroll', function() {
     if(this.window.scrollY >=560) {
       backToTopButton.classList.add('show')
     } else {
       backToTopButton.classList.remove('show')
     }
-  })
+})
