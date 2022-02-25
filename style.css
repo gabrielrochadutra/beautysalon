@@ -129,6 +129,10 @@ main {
   color: var(--primary);
 }
 
+.logo-alt span {
+  color: var(--background);
+}
+
 nav {
   height: 4.5rem;
   display: flex;
@@ -399,7 +403,7 @@ cards.grid {
 /* SWIPER */
 
 .swiper-container {
-  max-width: 100%;
+  overflow-x: hidden;
 }
 
 .swiper-slide {
@@ -450,4 +454,80 @@ cards.grid {
   color: var(--primary);
   font-size: 1.5rem;
   margin-right: 0.625rem;
+}
+
+/* FOOTER */
+
+footer {
+  background-color: var(--primary);
+}
+
+footer .logo {
+  display: inline-block;
+  margin-bottom: 1.5rem;
+}
+
+footer .brand {
+  color: var(--background);
+}
+
+footer .brand p {
+  color: var(--background);
+  margin-bottom: 0.75rem;
+}
+
+footer i {
+  font-size: 1.5rem;
+  color: var(--background);
+}
+
+footer .social {
+  display: flex;
+  gap: 2rem;
+}
+
+footer .social a {
+  transition: 0.3s;
+  display: inline-block;
+}
+
+footer .social a:hover {
+  transform: translateY(-8px);
+}
+
+.back-to-top {
+  background-color: var(--primary);
+  color: var(--background);
+  position: fixed;
+  right: 1rem;
+  bottom: 1rem;
+  padding: 0.5rem;
+  clip-path: circle();
+  font-size: 1.5rem;
+  visibility: hidden;
+  opacity: 0;
+  transition: 0.3s;
+  transform: translateY(100%);
+}
+
+.back-to-top.show {
+  visibility: visible;
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* AJUSTES RESPONSIVOS */
+
+/* 
+
+Media queries
+- extra large devices: 1200 >
+- large devices: 1023 >
+- medium devices: 992 >
+- small devices: 767 >
+
+*/
+
+@media(min-width: 992px){
+  
 }
